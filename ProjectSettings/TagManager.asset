@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Caja
+  - Contenedor
+  - Rojo
+  - Amarillo
+  - Morado
+  - Azul
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ public class GrabController : MonoBehaviour
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
 
-        if(grabCheck.collider != null && grabCheck.collider.tag == "Caja")
+        if (grabCheck.collider != null && (grabCheck.collider.tag == "Azul" || grabCheck.collider.tag == "Morado" || grabCheck.collider.tag == "Rojo" || grabCheck.collider.tag == "Amarillo"))
         {
             if (Input.GetKey(KeyCode.G))
             {
@@ -28,4 +28,14 @@ public class GrabController : MonoBehaviour
             }
         }
     }
+    
+//    void OnCollisionEnter2D(Collision2D col)
+//    {
+//        if (col.gameObject.tag == "Contenedor")
+//        {
+//            Points.numPoints++;
+//            Destroy(col.gameObject);
+//        }
+//    }
+
 }
