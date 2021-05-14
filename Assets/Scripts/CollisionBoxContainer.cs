@@ -22,7 +22,9 @@ public class CollisionBoxContainer : MonoBehaviour
         }
         else
         {
-            Points.numPoints--;
+            //Points.numPoints--;
+            HeartSystem.life--;
+
         }
     }
 }

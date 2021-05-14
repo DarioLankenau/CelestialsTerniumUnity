@@ -5,6 +5,7 @@ public class Control : MonoBehaviour
 {
     public void EscenaJuego()
     {
+        HeartSystem.life = 3;
         SceneManager.LoadScene("Juego");
     }
 
